@@ -7,6 +7,12 @@ class _HomeMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<SelectBarWidget> items = <SelectBarWidget>[];
+    items
+      ..add(SelectBarWidget('销量', OrderBy.up))
+      ..add(SelectBarWidget('价格', OrderBy.none))
+      ..add(SelectBarWidget('积分', OrderBy.none));
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Mobile'),
@@ -24,6 +30,7 @@ class _HomeMobile extends StatelessWidget {
               '${viewModel.counter}',
               style: Theme.of(context).textTheme.display1,
             ),
+            SelectBarGroupWidget(items)
           ],
         ),
       ),

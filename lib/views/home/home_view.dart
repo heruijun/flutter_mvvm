@@ -1,5 +1,7 @@
 library home_view;
 
+import 'package:flutter_mvvm/widgets/finish_animation.dart';
+import 'package:flutter_mvvm/widgets/select_bar_widget.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter/material.dart';
